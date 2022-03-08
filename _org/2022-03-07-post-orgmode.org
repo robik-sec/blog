@@ -2,7 +2,6 @@
 #+STARTUP: hidestars
 #+BEGIN_EXPORT html
 ---
-layout: post
 title: My first Post using Org-Mode
 categories:
   - blog

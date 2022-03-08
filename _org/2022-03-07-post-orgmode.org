@@ -17,5 +17,5 @@ Of course as I'm an long time emacs enthusiast, I use org-mode in order to write
 This might seems rediculus for some people, but most emacs users will understand me :)
 Especially, as I can have this nice featues, like syntax highlighting, and maybe I'm already to old to learn yet another markup language.
 #+begin_src python :results output
-print("Hello, world!")
+print("Hello World....!")
 #+end_src

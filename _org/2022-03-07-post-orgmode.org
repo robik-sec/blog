@@ -2,7 +2,7 @@
 #+STARTUP: hidestars
 #+BEGIN_EXPORT html
 ---
-title: My first Post
+title:  The first steps are the hardest
 categories:
   - blog
 tags:

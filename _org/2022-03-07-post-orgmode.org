@@ -2,7 +2,7 @@
 #+STARTUP: hidestars
 #+BEGIN_EXPORT html
 ---
-title: My first Post using Org-Mode
+title: My first Post
 categories:
   - blog
 tags:
@@ -11,10 +11,11 @@ tags:
 ---
 #+END_EXPORT
 
-So this is a simple test on using Org mode to write my Blog
+So here I start my journey to my first bug, lets see how this goes.
+Of course as I'm an long time emacs enthusiast, I use org-mode in order to write my blog.
 
+This might seems rediculus for some people, but most emacs users will understand me :)
+Especially, as I can have this nice featues, like syntax highlighting, and maybe I'm already to old to learn yet another markup language.
 #+begin_src python :results output
 print("Hello, world!")
 #+end_src
-
-Need to double check why this is not printet properly...

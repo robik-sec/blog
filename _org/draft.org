@@ -1,0 +1,17 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_EXPORT html
+---
+title:  The first steps are the hardest
+categories:
+  - blog
+tags:
+    - recon
+---
+#+END_EXPORT
+
+Bla Bla Bla
+
+#+begin_src python :results output
+print("Hello World....!")
+#+end_src

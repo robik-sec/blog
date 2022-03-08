@@ -1,0 +1,32 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_EXPORT html
+---
+title:  Playing with new and old Tools
+categories:
+  - blog
+tags:
+    - recon
+---
+#+END_EXPORT
+
+Today I used some new tools, and got a better understanding for some tools I already use:
+Furthermore I learned how to access an vhost, if it is not resolved via DNS, which is simple but new to me...
+Adding the "Host: xxx.domain.com" into the header does the trick. All that with just two exersices on Pentesterlab, there is still much to learn
+
+** Aquatone
+
+Honestly I still very surprised, how amazing these recon tools are, they are much better than I ever expected.
+Simple, fast and powerful
+
+[[https://github.com/michenriksen/aquatone]]
+
+** Sublist3r
+
+Just the first start has already shown that this is quite fast, but there are more features to discover.
+
+[[https://github.com/aboul3la/Sublist3r]]
+
+** Gobuster
+
+Alredu oftern used and loved, tody I discoverd that I can also use the same tool for brutefocing dns and vhosts, not only directories.

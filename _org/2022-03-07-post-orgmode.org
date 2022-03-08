@@ -5,6 +5,8 @@
 layout: post
 title: My first Post using Org-Mode
 categories:
+  - blog
+tags:
     - org
     - emacs
 ---

@@ -4,9 +4,9 @@ title: "BBM"
 ---
 
 <p>
-Some Generall notes, based on various Talks and Videos mostly focusing on Recon
+Some general notes, based on various Talks and Videos mostly focusing on Recon.
 It is basically a Massive list of tools and a short description of the purpose,
-all started with the following talk from @JHaddix
+all started with the following talk from @Jhaddix
 </p>
 
 <p>
@@ -18,8 +18,8 @@ Bug Hunters Methodology V4.0
 This is the Basis of this list, everthing else I read/heard somewere else :)
 </p>
 
-<div id="outline-container-orge97e4b9" class="outline-2">
-<h2 id="orge97e4b9"><span class="section-number-2">1</span> General</h2>
+<div id="outline-container-orgf520bf9" class="outline-2">
+<h2 id="orgf520bf9"><span class="section-number-2">1</span> General</h2>
 <div class="outline-text-2" id="text-1">
 </div>
 <div id="outline-container-orgf8d2be8" class="outline-3">
@@ -41,13 +41,16 @@ This is the Basis of this list, everthing else I read/heard somewere else :)
 <h3 id="orgc71e476"><span class="section-number-3">2.1</span> Domains inscope</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-From Bugbounty programms
+The first step are of cousrse the domains featured in the Bugbounty program
 </p>
 </div>
 </div>
 <div id="outline-container-org330690d" class="outline-3">
 <h3 id="org330690d"><span class="section-number-3">2.2</span> Aquisitions</h3>
 <div class="outline-text-3" id="text-2-2">
+<p>
+It is worth to check if the company made any aquisitions, as this might be in scope, and some old version is still active. Possible sources are:
+</p>
 <ul class="org-ul">
 <li>Crunchbase</li>
 <li>Wikipedia</li>
@@ -60,13 +63,14 @@ From Bugbounty programms
 <h3 id="org1f8093c"><span class="section-number-3">2.3</span> ASN Enumeration</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Only relevant for bigger companies
+Only relevant for bigger companies, as typically only bigger companies have their own ASN
 </p>
 <dl class="org-dl">
-<dt>bgp.he.net</dt><dd>Homepage for ASN enumeration</dd>
-<dt>ASNlookaup</dt><dd>Need to double check if really in scope</dd>
-<dt>Metabigor</dt><dd>Need to double check if really in scope</dd>
-<dt>Amass</dt><dd>amass intel -asn xxxxx</dd>
+<dt>bgp.he.net</dt><dd>Homepage for ASN enumeration, API available</dd>
+<dt>ASNlookup &amp; Metabigor</dt><dd><a href="https://github.com/yassineaboukir/Asnlookup">https://github.com/yassineaboukir/Asnlookup</a> <br />
+<a href="https://github.com/j3ssie/metabigor">https://github.com/j3ssie/metabigor</a> <br />
+Need to double check if really in scope, as the results are only a list of IPs</dd>
+<dt>Amass</dt><dd><code>amass intel -asn xxxxx</code></dd>
 </dl>
 </div>
 </div>
@@ -76,7 +80,7 @@ Only relevant for bigger companies
 <dl class="org-dl">
 <dt>whoxy.com</dt><dd></dd>
 
-<dt>DOMLink</dt><dd>will query whoxy from the cmd line
+<dt>DOMLink</dt><dd>will query whoxy from the cmd line. Is a
 recursive tool, will also lookup all the found names</dd>
 </dl>
 </div>
@@ -85,8 +89,8 @@ recursive tool, will also lookup all the found names</dd>
 <h3 id="orgeee560e"><span class="section-number-3">2.5</span> Ad/Analytics Releationships</h3>
 <div class="outline-text-3" id="text-2-5">
 <dl class="org-dl">
-<dt>builtwith.com</dt><dd>Basically a technology tracker
-Relationship Profile, will show ad tracking codes</dd>
+<dt>builtwith.com</dt><dd>Basically a technology tracker, offers
+Relationship Profile, which will show ad tracking codes</dd>
 </dl>
 </div>
 </div>
@@ -95,7 +99,7 @@ Relationship Profile, will show ad tracking codes</dd>
 <h3 id="org1c3e6c4"><span class="section-number-3">2.6</span> Google FU</h3>
 <div class="outline-text-3" id="text-2-6">
 <p>
-Copyright text, inurl: etc.
+Copyright text, <code>inurl:</code> etc.
 </p>
 </div>
 </div>
@@ -117,11 +121,15 @@ General tool to get info about URLs, especially location/certificates etc.
 <div class="outline-text-3" id="text-3-1">
 <dl class="org-dl">
 <dt>Spidering via Burp Suit Pro</dt><dd>Recursion has to be done on you own</dd>
-<dt>GoSpider</dt><dd>Need to do recursion externally</dd>
-<dt>hakrawler</dt><dd>Recursive is possible</dd>
-<dt>Subdomainizer</dt><dd>Parsing mainly JS in order to find subdomains
-also search for Keys</dd>
-<dt>Subscraper</dt><dd>Recursive JS scraper</dd>
+<dt>GoSpider</dt><dd><a href="https://github.com/jaeles-project/gospider">https://github.com/jaeles-project/gospider</a> <br />
+Need to do recursion externally</dd>
+<dt>hakrawler</dt><dd><a href="https://github.com/hakluke/hakrawler">https://github.com/hakluke/hakrawler</a> <br />
+Recursive is supported</dd>
+<dt>Subdomainizer</dt><dd><a href="https://github.com/nsonaniya2010/SubDomainizer">https://github.com/nsonaniya2010/SubDomainizer</a> <br />
+Parsing mainly JS in order to find subdomains,
+also searches for Keys</dd>
+<dt>Subscraper</dt><dd><a href="https://github.com/m8r0wn/subscraper">https://github.com/m8r0wn/subscraper</a> <br />
+Recursive JS scraper</dd>
 </dl>
 </div>
 </div>
@@ -129,12 +137,16 @@ also search for Keys</dd>
 <h3 id="org75189fd"><span class="section-number-3">3.2</span> Subdomain Scraping</h3>
 <div class="outline-text-3" id="text-3-2">
 <dl class="org-dl">
-<dt>Amass</dt><dd>Most sources, brute forcing options&#x2026;
+<dt>Amass</dt><dd><a href="https://github.com/OWASP/Amass">https://github.com/OWASP/Amass</a> <br />
+Most sources, brute forcing options&#x2026; <br />
 Also shows ASN in results -&gt; might be a new ASN to restart on Seed domain discovery</dd>
-<dt>Subfinder</dt><dd>Uses other sources, can be used in parallel</dd>
-<dt>github-subdomains.py</dt><dd>Will scraping github for subdomains, often not referenced.
-API is rate limited&#x2026; ensure waittimes</dd>
-<dt>shosubgo</dt><dd>Parser for Shodan</dd>
+<dt>Subfinder</dt><dd><a href="https://github.com/projectdiscovery/subfinder">https://github.com/projectdiscovery/subfinder</a> <br />
+Uses other sources, can be used in parallel</dd>
+<dt>github-subdomains.py</dt><dd><a href="https://github.com/gwen001/github-search">https://github.com/gwen001/github-search</a> <br />
+Will scraping github for subdomains, often not referenced.
+API is rate limited&#x2026; ensure waittimes 6-10 seconds</dd>
+<dt>shosubgo</dt><dd><a href="https://github.com/incogbyte/shosubgo">https://github.com/incogbyte/shosubgo</a> <br />
+Parser for Shodan</dd>
 <dt>Scraping in Cloud ranges</dt><dd>No tool, but easy to do via
 <a href="https://tls.bufferover.run/">https://tls.bufferover.run/</a></dd>
 </dl>
@@ -146,9 +158,9 @@ API is rate limited&#x2026; ensure waittimes</dd>
 <dl class="org-dl">
 <dt>Amass</dt><dd>Uses 8 resolvers per default
 builtin list,</dd>
-<dt>MassDNS</dt><dd></dd>
-
-<dt>shuffleDNS</dt><dd>Wrapper around MassDNS</dd>
+<dt>MassDNS</dt><dd><a href="https://github.com/blechschmidt/massdns">https://github.com/blechschmidt/massdns</a> <br /></dd>
+<dt>shuffleDNS</dt><dd><a href="https://github.com/projectdiscovery/shuffledns">https://github.com/projectdiscovery/shuffledns</a> <br />
+Wrapper around MassDNS</dd>
 </dl>
 </div>
 </div>
@@ -237,7 +249,8 @@ Bigger Framework, can do a ton of stuff, also includes Subdomain-takeover</dd>
 <dl class="org-dl">
 <dt>interlace</dt><dd><a href="https://github.com/codingo/Interlace">https://github.com/codingo/Interlace</a>
 Thread/proxy different commands</dd>
-<dt>@tomnomnom</dt><dd>Various tools, all are amazing, expecially CLI centered</dd>
+<dt>@tomnomnom</dt><dd><a href="https://github.com/tomnomnom">https://github.com/tomnomnom</a> <br />
+Various tools, all are amazing, expecially CLI centered</dd>
 </dl>
 <p>
 -* httpprobe
@@ -254,8 +267,8 @@ Thread/proxy different commands</dd>
 <h2 id="org90a1684"><span class="section-number-2">6</span> Wordlists</h2>
 <div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-orgf520bf9" class="outline-3">
-<h3 id="orgf520bf9"><span class="section-number-3">6.1</span> General</h3>
+<div id="outline-container-org5158dff" class="outline-3">
+<h3 id="org5158dff"><span class="section-number-3">6.1</span> General</h3>
 <div class="outline-text-3" id="text-6-1">
 <dl class="org-dl">
 <dt>clean<sub>wordlist.sh</sub></dt><dd>Wordlist cleanup, avoid unneccesary requests.</dd>
@@ -266,8 +279,10 @@ Thread/proxy different commands</dd>
 <h3 id="org441b1fe"><span class="section-number-3">6.2</span> Massive wordlist</h3>
 <div class="outline-text-3" id="text-6-2">
 <dl class="org-dl">
-<dt>api wordlist</dt><dd>wordlist.assetnote.io</dd>
-<dt>all.txt</dt><dd>Massive list from Jason Haddix</dd>
+<dt>api wordlist</dt><dd><a href="https://wordlists.assetnote.io/">https://wordlists.assetnote.io/</a> <br /></dd>
+
+<dt>all.txt</dt><dd><a href="https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056">https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056</a> <br />
+Massive list from Jason Haddix</dd>
 <dt>commonspeak</dt><dd><a href="https://github.com/assetnote/commonspeak2">https://github.com/assetnote/commonspeak2</a></dd>
 </dl>
 </div>
@@ -293,7 +308,7 @@ Talk @tomnomnom on nahamcon
 <h3 id="orgac6f4a8"><span class="section-number-3">7.1</span> 403 Forbidden</h3>
 <div class="outline-text-3" id="text-7-1">
 <dl class="org-dl">
-<dt>byp4xx.sh</dt><dd></dd>
+<dt>byp4xx.sh</dt><dd><a href="https://github.com/lobuhi/byp4xx">https://github.com/lobuhi/byp4xx</a> <br /></dd>
 </dl>
 </div>
 </div>

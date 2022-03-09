@@ -8,9 +8,9 @@ title: "BBM"
 ---
 #+END_EXPORT
 
-Some Generall notes, based on various Talks and Videos mostly focusing on Recon
+Some general notes, based on various Talks and Videos mostly focusing on Recon.
 It is basically a Massive list of tools and a short description of the purpose,
-all started with the following talk from @JHaddix
+all started with the following talk from @Jhaddix
 
 Bug Hunters Methodology V4.0
 [[https://www.youtube.com/watch?v=p4JgIu1mceI&t=462s]]
@@ -24,29 +24,31 @@ This is the Basis of this list, everthing else I read/heard somewere else :)
 
 * Seed domain gathering
 ** Domains inscope
-   From Bugbounty programms
+   The first step are of cousrse the domains featured in the Bugbounty program
 ** Aquisitions
+   It is worth to check if the company made any aquisitions, as this might be in scope, and some old version is still active. Possible sources are:
    - Crunchbase
    - Wikipedia
    - Google
 
 ** ASN Enumeration
-   Only relevant for bigger companies
-- bgp.he.net :: Homepage for ASN enumeration
-- ASNlookaup :: Need to double check if really in scope
-- Metabigor :: Need to double check if really in scope
-- Amass :: amass intel -asn xxxxx
+   Only relevant for bigger companies, as typically only bigger companies have their own ASN
+- bgp.he.net :: Homepage for ASN enumeration, API available
+- ASNlookup & Metabigor :: https://github.com/yassineaboukir/Asnlookup \\
+  https://github.com/j3ssie/metabigor \\
+  Need to double check if really in scope, as the results are only a list of IPs
+- Amass :: ~amass intel -asn xxxxx~
 ** Reverse WHOIS
 - whoxy.com ::
-- DOMLink :: will query whoxy from the cmd line
+- DOMLink :: will query whoxy from the cmd line. Is a
     recursive tool, will also lookup all the found names
 ** Ad/Analytics Releationships
 - builtwith.com ::
-    Basically a technology tracker
-    Relationship Profile, will show ad tracking codes
+    Basically a technology tracker, offers
+    Relationship Profile, which will show ad tracking codes
 
 ** Google FU
-   Copyright text, inurl: etc.
+   Copyright text, ~inurl:~ etc.
 ** Shodan
    General tool to get info about URLs, especially location/certificates etc.
 * Subdomain gathering
@@ -54,24 +56,29 @@ This is the Basis of this list, everthing else I read/heard somewere else :)
 - Spidering via Burp Suit Pro ::
     Recursion has to be done on you own
 - GoSpider ::
+    https://github.com/jaeles-project/gospider \\
     Need to do recursion externally
 - hakrawler ::
-    Recursive is possible
+    https://github.com/hakluke/hakrawler \\
+    Recursive is supported
 - Subdomainizer ::
-    Parsing mainly JS in order to find subdomains
-    also search for Keys
+    https://github.com/nsonaniya2010/SubDomainizer \\
+    Parsing mainly JS in order to find subdomains,
+    also searches for Keys
 - Subscraper ::
+    https://github.com/m8r0wn/subscraper \\
     Recursive JS scraper
 ** Subdomain Scraping
 - Amass ::
-    Most sources, brute forcing options...
+    https://github.com/OWASP/Amass \\
+    Most sources, brute forcing options... \\
     Also shows ASN in results -> might be a new ASN to restart on Seed domain discovery
-- Subfinder ::
+- Subfinder :: https://github.com/projectdiscovery/subfinder \\
     Uses other sources, can be used in parallel
-- github-subdomains.py ::
+- github-subdomains.py :: https://github.com/gwen001/github-search \\
     Will scraping github for subdomains, often not referenced.
-    API is rate limited... ensure waittimes
-- shosubgo ::
+    API is rate limited... ensure waittimes 6-10 seconds
+- shosubgo :: https://github.com/incogbyte/shosubgo \\
     Parser for Shodan
 - Scraping in Cloud ranges ::
     No tool, but easy to do via
@@ -80,8 +87,8 @@ This is the Basis of this list, everthing else I read/heard somewere else :)
 - Amass ::
     Uses 8 resolvers per default
     builtin list,
-- MassDNS ::
-- shuffleDNS ::
+- MassDNS :: https://github.com/blechschmidt/massdns \\
+- shuffleDNS :: https://github.com/projectdiscovery/shuffledns \\
     Wrapper around MassDNS
 ** Alternation Scanning
    Using alternation/mutations on words
@@ -132,7 +139,7 @@ This is the Basis of this list, everthing else I read/heard somewere else :)
 - interlace ::
     https://github.com/codingo/Interlace
     Thread/proxy different commands
-- @tomnomnom ::
+- @tomnomnom :: https://github.com/tomnomnom \\
     Various tools, all are amazing, expecially CLI centered
 -* httpprobe
 -* waybackurls
@@ -145,9 +152,9 @@ This is the Basis of this list, everthing else I read/heard somewere else :)
 - clean_wordlist.sh ::
     Wordlist cleanup, avoid unneccesary requests.
 ** Massive wordlist
-- api wordlist ::
-    wordlist.assetnote.io
-- all.txt ::
+- api wordlist :: https://wordlists.assetnote.io/ \\
+
+- all.txt :: https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056 \\
     Massive list from Jason Haddix
 - commonspeak ::
     [[https://github.com/assetnote/commonspeak2]]
@@ -158,4 +165,4 @@ This is the Basis of this list, everthing else I read/heard somewere else :)
 
 * Exploit tooling
 ** 403 Forbidden
-- byp4xx.sh ::
+- byp4xx.sh :: https://github.com/lobuhi/byp4xx \\

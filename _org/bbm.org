@@ -1,0 +1,166 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+permalink: /bbm/
+title: "BBM"
+---
+#+END_EXPORT
+
+Some Generall notes, based on various Talks and Videos mostly focusing on Recon
+It is basically a Massive list of tools and a short description of the purpose,
+all started with the following talk from @JHaddix
+
+Bug Hunters Methodology V4.0
+[[https://www.youtube.com/watch?v=p4JgIu1mceI&t=462s]]
+
+This is the Basis of this list, everthing else I read/heard somewere else :)
+
+* General
+** Links
+*** TODO checkout the study Guides
+   https://danielmiessler.com/study/
+
+* Seed domain gathering
+** Domains inscope
+   From Bugbounty programms
+** Aquisitions
+   - Crunchbase
+   - Wikipedia
+   - Google
+
+** ASN Enumeration
+   Only relevant for bigger companies
+*** bgp.he.net
+    Homepage for ASN enumeration
+*** ASNlookaup
+    Need to double check if really in scope
+*** Metabigor
+    Need to double check if really in scope
+*** Amass
+    amass intel -asn xxxxx
+** Reverse WHOIS
+*** whoxy.com
+*** DOMLink
+    will query whoxy from the cmd line
+    recursive tool, will also lookup all the found names
+** Ad/Analytics Releationships
+*** builtwith.com
+    Basically a technology tracker
+    Relationship Profile, will show ad tracking codes
+
+** Google FU
+   Copyright text, inurl: etc.
+** Shodan
+   General tool to get info about URLs, especially location/certificates etc.
+* Subdomain gathering
+** Link discovery
+*** Spidering via Burp Suit Pro
+    Recursion has to be done on you own
+*** GoSpider
+    Need to do recursion externally
+*** hakrawler
+    Recursive is possible
+*** Subdomainizer
+    Parsing mainly JS in order to find subdomains
+    also search for Keys
+*** Subscraper
+    Recursive JS scraper
+** Subdomain Scraping
+*** Amass
+    Most sources, brute forcing options...
+    Also shows ASN in results -> might be a new ASN to restart on Seed domain discovery
+*** Subfinder
+    Uses other sources, can be used in parallel
+*** github-subdomains.py
+    Will scraping github for subdomains, often not referenced.
+    API is rate limited... ensure waittimes
+*** shosubgo
+    Parser for Shodan
+*** Scraping in Cloud ranges
+    No tool, but easy to do via
+    [[https://tls.bufferover.run/]]
+** Subdomain Bruteforcing
+*** Amass
+    Uses 8 resolvers per default
+    builtin list,
+*** MassDNS
+*** shuffleDNS
+    Wrapper around MassDNS
+** Alternation Scanning
+   Using alternation/mutations on words
+   Already part of Amass
+*** altdns
+    [[https://github.com/infosec-au/altdns]]
+
+* Others
+** Portscanning
+*** masscan
+    For general scanning, just finding open ports, only uses IPs, no domains
+    https://github.com/robertdavidgraham/masscan
+*** dnmasscan
+    https://github.com/rastating/dnmasscan
+    Wrapper to be able to use domains, for masscan
+*** nmap
+    fancy scanning only the open ports to save time
+
+** Service Scanning
+*** brutespray
+    https://github.com/x90skysn3k/brutespray
+    For default credential brute forcing
+
+** Github Dorking
+*** TODO Listen to "Github and Sensitive data Exposure"
+
+** Screenshotting
+*** httpprobe
+    Not really screenshotting, but goot as prefilter, if domain is up
+*** eyewitness
+    https://github.com/FortyNorthSecurity/EyeWitness
+*** aquatone
+    https://github.com/michenriksen/aquatone
+*** httpscreenshot
+    https://github.com/breenmachine/httpscreenshot
+
+** Subdomain takeover
+*** can-i-take-over-xyz
+    https://github.com/EdOverflow/can-i-take-over-xyz
+*** subover
+    https://github.com/Ice3man543/SubOver
+*** nuclei
+    https://github.com/projectdiscovery/nuclei
+    Bigger Framework, can do a ton of stuff, also includes Subdomain-takeover
+
+* Automation
+** Extending tools
+*** interlace
+    https://github.com/codingo/Interlace
+    Thread/proxy different commands
+*** @tomnomnom
+    Various tools, all are amazing, expecially CLI centered
+**** httpprobe
+**** waybackurls
+**** meg
+**** gf
+**** assetfinder
+
+* Wordlists
+** General
+*** clean_wordlist.sh
+    Wordlist cleanup, avoid unneccesary requests.
+** Massive wordlist
+*** api wordlist
+    wordlist.assetnote.io
+*** all.txt
+    Massive list from Jason Haddix
+*** commonspeak
+    [[https://github.com/assetnote/commonspeak2]]
+** Tailored wordlist
+   Talk @tomnomnom on nahamcon
+*** cewl
+    Basic tool for word list generation based on Homepages
+
+* Exploit tooling
+** 403 Forbidden
+*** byp4xx.sh

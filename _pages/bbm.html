@@ -1,0 +1,543 @@
+---
+permalink: /bbm/
+title: "BBM"
+---
+
+<p>
+Some Generall notes, based on various Talks and Videos mostly focusing on Recon
+It is basically a Massive list of tools and a short description of the purpose,
+all started with the following talk from @JHaddix
+</p>
+
+<p>
+Bug Hunters Methodology V4.0
+<a href="https://www.youtube.com/watch?v=p4JgIu1mceI&amp;t=462s">https://www.youtube.com/watch?v=p4JgIu1mceI&amp;t=462s</a>
+</p>
+
+<p>
+This is the Basis of this list, everthing else I read/heard somewere else :)
+</p>
+
+<div id="outline-container-org8a32f7f" class="outline-2">
+<h2 id="org8a32f7f">General</h2>
+<div class="outline-text-2" id="text-org8a32f7f">
+</div>
+<div id="outline-container-orgf8d2be8" class="outline-3">
+<h3 id="orgf8d2be8">Links</h3>
+<div class="outline-text-3" id="text-orgf8d2be8">
+</div>
+<div id="outline-container-org75ebeda" class="outline-4">
+<h4 id="org75ebeda"><span class="todo TODO">TODO</span> checkout the study Guides</h4>
+<div class="outline-text-4" id="text-org75ebeda">
+<p>
+<a href="https://danielmiessler.com/study/">https://danielmiessler.com/study/</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org88feb9f" class="outline-2">
+<h2 id="org88feb9f">Seed domain gathering</h2>
+<div class="outline-text-2" id="text-org88feb9f">
+</div>
+<div id="outline-container-orgc71e476" class="outline-3">
+<h3 id="orgc71e476">Domains inscope</h3>
+<div class="outline-text-3" id="text-orgc71e476">
+<p>
+From Bugbounty programms
+</p>
+</div>
+</div>
+<div id="outline-container-org330690d" class="outline-3">
+<h3 id="org330690d">Aquisitions</h3>
+<div class="outline-text-3" id="text-org330690d">
+<ul class="org-ul">
+<li>Crunchbase</li>
+<li>Wikipedia</li>
+<li>Google</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1f8093c" class="outline-3">
+<h3 id="org1f8093c">ASN Enumeration</h3>
+<div class="outline-text-3" id="text-org1f8093c">
+<p>
+Only relevant for bigger companies
+</p>
+</div>
+<div id="outline-container-org35f714c" class="outline-4">
+<h4 id="org35f714c">bgp.he.net</h4>
+<div class="outline-text-4" id="text-org35f714c">
+<p>
+Homepage for ASN enumeration
+</p>
+</div>
+</div>
+<div id="outline-container-org2bcf2a4" class="outline-4">
+<h4 id="org2bcf2a4">ASNlookaup</h4>
+<div class="outline-text-4" id="text-org2bcf2a4">
+<p>
+Need to double check if really in scope
+</p>
+</div>
+</div>
+<div id="outline-container-org23beec9" class="outline-4">
+<h4 id="org23beec9">Metabigor</h4>
+<div class="outline-text-4" id="text-org23beec9">
+<p>
+Need to double check if really in scope
+</p>
+</div>
+</div>
+<div id="outline-container-orgb824f1f" class="outline-4">
+<h4 id="orgb824f1f">Amass</h4>
+<div class="outline-text-4" id="text-orgb824f1f">
+<p>
+amass intel -asn xxxxx
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd3c13ea" class="outline-3">
+<h3 id="orgd3c13ea">Reverse WHOIS</h3>
+<div class="outline-text-3" id="text-orgd3c13ea">
+</div>
+<div id="outline-container-org0f1bf13" class="outline-4">
+<h4 id="org0f1bf13">whoxy.com</h4>
+</div>
+<div id="outline-container-orgc7151c9" class="outline-4">
+<h4 id="orgc7151c9">DOMLink</h4>
+<div class="outline-text-4" id="text-orgc7151c9">
+<p>
+will query whoxy from the cmd line
+recursive tool, will also lookup all the found names
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgeee560e" class="outline-3">
+<h3 id="orgeee560e">Ad/Analytics Releationships</h3>
+<div class="outline-text-3" id="text-orgeee560e">
+</div>
+<div id="outline-container-orgd672983" class="outline-4">
+<h4 id="orgd672983">builtwith.com</h4>
+<div class="outline-text-4" id="text-orgd672983">
+<p>
+Basically a technology tracker
+Relationship Profile, will show ad tracking codes
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1c3e6c4" class="outline-3">
+<h3 id="org1c3e6c4">Google FU</h3>
+<div class="outline-text-3" id="text-org1c3e6c4">
+<p>
+Copyright text, inurl: etc.
+</p>
+</div>
+</div>
+<div id="outline-container-org42e921c" class="outline-3">
+<h3 id="org42e921c">Shodan</h3>
+<div class="outline-text-3" id="text-org42e921c">
+<p>
+General tool to get info about URLs, especially location/certificates etc.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org113ed3f" class="outline-2">
+<h2 id="org113ed3f">Subdomain gathering</h2>
+<div class="outline-text-2" id="text-org113ed3f">
+</div>
+<div id="outline-container-org445b629" class="outline-3">
+<h3 id="org445b629">Link discovery</h3>
+<div class="outline-text-3" id="text-org445b629">
+</div>
+<div id="outline-container-orgac78e8a" class="outline-4">
+<h4 id="orgac78e8a">Spidering via Burp Suit Pro</h4>
+<div class="outline-text-4" id="text-orgac78e8a">
+<p>
+Recursion has to be done on you own
+</p>
+</div>
+</div>
+<div id="outline-container-org1f28151" class="outline-4">
+<h4 id="org1f28151">GoSpider</h4>
+<div class="outline-text-4" id="text-org1f28151">
+<p>
+Need to do recursion externally
+</p>
+</div>
+</div>
+<div id="outline-container-orgc64b0f2" class="outline-4">
+<h4 id="orgc64b0f2">hakrawler</h4>
+<div class="outline-text-4" id="text-orgc64b0f2">
+<p>
+Recursive is possible
+</p>
+</div>
+</div>
+<div id="outline-container-orgfcadf32" class="outline-4">
+<h4 id="orgfcadf32">Subdomainizer</h4>
+<div class="outline-text-4" id="text-orgfcadf32">
+<p>
+Parsing mainly JS in order to find subdomains
+also search for Keys
+</p>
+</div>
+</div>
+<div id="outline-container-orgcd18bb8" class="outline-4">
+<h4 id="orgcd18bb8">Subscraper</h4>
+<div class="outline-text-4" id="text-orgcd18bb8">
+<p>
+Recursive JS scraper
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org75189fd" class="outline-3">
+<h3 id="org75189fd">Subdomain Scraping</h3>
+<div class="outline-text-3" id="text-org75189fd">
+</div>
+<div id="outline-container-org1958b2d" class="outline-4">
+<h4 id="org1958b2d">Amass</h4>
+<div class="outline-text-4" id="text-org1958b2d">
+<p>
+Most sources, brute forcing options&#x2026;
+Also shows ASN in results -&gt; might be a new ASN to restart on Seed domain discovery
+</p>
+</div>
+</div>
+<div id="outline-container-orged5325a" class="outline-4">
+<h4 id="orged5325a">Subfinder</h4>
+<div class="outline-text-4" id="text-orged5325a">
+<p>
+Uses other sources, can be used in parallel
+</p>
+</div>
+</div>
+<div id="outline-container-orge8d28eb" class="outline-4">
+<h4 id="orge8d28eb">github-subdomains.py</h4>
+<div class="outline-text-4" id="text-orge8d28eb">
+<p>
+Will scraping github for subdomains, often not referenced.
+API is rate limited&#x2026; ensure waittimes
+</p>
+</div>
+</div>
+<div id="outline-container-org527340c" class="outline-4">
+<h4 id="org527340c">shosubgo</h4>
+<div class="outline-text-4" id="text-org527340c">
+<p>
+Parser for Shodan
+</p>
+</div>
+</div>
+<div id="outline-container-orgf1c5029" class="outline-4">
+<h4 id="orgf1c5029">Scraping in Cloud ranges</h4>
+<div class="outline-text-4" id="text-orgf1c5029">
+<p>
+No tool, but easy to do via
+<a href="https://tls.bufferover.run/">https://tls.bufferover.run/</a>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org0b63ea2" class="outline-3">
+<h3 id="org0b63ea2">Subdomain Bruteforcing</h3>
+<div class="outline-text-3" id="text-org0b63ea2">
+</div>
+<div id="outline-container-org0303765" class="outline-4">
+<h4 id="org0303765">Amass</h4>
+<div class="outline-text-4" id="text-org0303765">
+<p>
+Uses 8 resolvers per default
+builtin list,
+</p>
+</div>
+</div>
+<div id="outline-container-org89a5e5d" class="outline-4">
+<h4 id="org89a5e5d">MassDNS</h4>
+</div>
+<div id="outline-container-orgd422c5d" class="outline-4">
+<h4 id="orgd422c5d">shuffleDNS</h4>
+<div class="outline-text-4" id="text-orgd422c5d">
+<p>
+Wrapper around MassDNS
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org5831126" class="outline-3">
+<h3 id="org5831126">Alternation Scanning</h3>
+<div class="outline-text-3" id="text-org5831126">
+<p>
+Using alternation/mutations on words
+Already part of Amass
+</p>
+</div>
+<div id="outline-container-orgc1b46e7" class="outline-4">
+<h4 id="orgc1b46e7">altdns</h4>
+<div class="outline-text-4" id="text-orgc1b46e7">
+<p>
+<a href="https://github.com/infosec-au/altdns">https://github.com/infosec-au/altdns</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org068bd8c" class="outline-2">
+<h2 id="org068bd8c">Others</h2>
+<div class="outline-text-2" id="text-org068bd8c">
+</div>
+<div id="outline-container-orgf926e0e" class="outline-3">
+<h3 id="orgf926e0e">Portscanning</h3>
+<div class="outline-text-3" id="text-orgf926e0e">
+</div>
+<div id="outline-container-orgbbb4173" class="outline-4">
+<h4 id="orgbbb4173">masscan</h4>
+<div class="outline-text-4" id="text-orgbbb4173">
+<p>
+For general scanning, just finding open ports, only uses IPs, no domains
+<a href="https://github.com/robertdavidgraham/masscan">https://github.com/robertdavidgraham/masscan</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgc2eaa22" class="outline-4">
+<h4 id="orgc2eaa22">dnmasscan</h4>
+<div class="outline-text-4" id="text-orgc2eaa22">
+<p>
+<a href="https://github.com/rastating/dnmasscan">https://github.com/rastating/dnmasscan</a>
+Wrapper to be able to use domains, for masscan
+</p>
+</div>
+</div>
+<div id="outline-container-orgceba026" class="outline-4">
+<h4 id="orgceba026">nmap</h4>
+<div class="outline-text-4" id="text-orgceba026">
+<p>
+fancy scanning only the open ports to save time
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4857412" class="outline-3">
+<h3 id="org4857412">Service Scanning</h3>
+<div class="outline-text-3" id="text-org4857412">
+</div>
+<div id="outline-container-orgd62290e" class="outline-4">
+<h4 id="orgd62290e">brutespray</h4>
+<div class="outline-text-4" id="text-orgd62290e">
+<p>
+<a href="https://github.com/x90skysn3k/brutespray">https://github.com/x90skysn3k/brutespray</a>
+For default credential brute forcing
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga555861" class="outline-3">
+<h3 id="orga555861">Github Dorking</h3>
+<div class="outline-text-3" id="text-orga555861">
+</div>
+<div id="outline-container-orgfeca30d" class="outline-4">
+<h4 id="orgfeca30d"><span class="todo TODO">TODO</span> Listen to "Github and Sensitive data Exposure"</h4>
+</div>
+</div>
+
+<div id="outline-container-org8ddeee1" class="outline-3">
+<h3 id="org8ddeee1">Screenshotting</h3>
+<div class="outline-text-3" id="text-org8ddeee1">
+</div>
+<div id="outline-container-org4a2be69" class="outline-4">
+<h4 id="org4a2be69">httpprobe</h4>
+<div class="outline-text-4" id="text-org4a2be69">
+<p>
+Not really screenshotting, but goot as prefilter, if domain is up
+</p>
+</div>
+</div>
+<div id="outline-container-org8803772" class="outline-4">
+<h4 id="org8803772">eyewitness</h4>
+<div class="outline-text-4" id="text-org8803772">
+<p>
+<a href="https://github.com/FortyNorthSecurity/EyeWitness">https://github.com/FortyNorthSecurity/EyeWitness</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org796e1ad" class="outline-4">
+<h4 id="org796e1ad">aquatone</h4>
+<div class="outline-text-4" id="text-org796e1ad">
+<p>
+<a href="https://github.com/michenriksen/aquatone">https://github.com/michenriksen/aquatone</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org45713e4" class="outline-4">
+<h4 id="org45713e4">httpscreenshot</h4>
+<div class="outline-text-4" id="text-org45713e4">
+<p>
+<a href="https://github.com/breenmachine/httpscreenshot">https://github.com/breenmachine/httpscreenshot</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org86cddfc" class="outline-3">
+<h3 id="org86cddfc">Subdomain takeover</h3>
+<div class="outline-text-3" id="text-org86cddfc">
+</div>
+<div id="outline-container-org77efa3b" class="outline-4">
+<h4 id="org77efa3b">can-i-take-over-xyz</h4>
+<div class="outline-text-4" id="text-org77efa3b">
+<p>
+<a href="https://github.com/EdOverflow/can-i-take-over-xyz">https://github.com/EdOverflow/can-i-take-over-xyz</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org973a002" class="outline-4">
+<h4 id="org973a002">subover</h4>
+<div class="outline-text-4" id="text-org973a002">
+<p>
+<a href="https://github.com/Ice3man543/SubOver">https://github.com/Ice3man543/SubOver</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org3561fb8" class="outline-4">
+<h4 id="org3561fb8">nuclei</h4>
+<div class="outline-text-4" id="text-org3561fb8">
+<p>
+<a href="https://github.com/projectdiscovery/nuclei">https://github.com/projectdiscovery/nuclei</a>
+Bigger Framework, can do a ton of stuff, also includes Subdomain-takeover
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgba08d7b" class="outline-2">
+<h2 id="orgba08d7b">Automation</h2>
+<div class="outline-text-2" id="text-orgba08d7b">
+</div>
+<div id="outline-container-org0abdb2e" class="outline-3">
+<h3 id="org0abdb2e">Extending tools</h3>
+<div class="outline-text-3" id="text-org0abdb2e">
+</div>
+<div id="outline-container-orgd1e668a" class="outline-4">
+<h4 id="orgd1e668a">interlace</h4>
+<div class="outline-text-4" id="text-orgd1e668a">
+<p>
+<a href="https://github.com/codingo/Interlace">https://github.com/codingo/Interlace</a>
+Thread/proxy different commands
+</p>
+</div>
+</div>
+<div id="outline-container-orgee2ffce" class="outline-4">
+<h4 id="orgee2ffce">@tomnomnom</h4>
+<div class="outline-text-4" id="text-orgee2ffce">
+<p>
+Various tools, all are amazing, expecially CLI centered
+</p>
+</div>
+<div id="outline-container-org158f747" class="outline-5">
+<h5 id="org158f747">httpprobe</h5>
+</div>
+<div id="outline-container-org7b2c067" class="outline-5">
+<h5 id="org7b2c067">waybackurls</h5>
+</div>
+<div id="outline-container-org0f43cc0" class="outline-5">
+<h5 id="org0f43cc0">meg</h5>
+</div>
+<div id="outline-container-orgf6e0df7" class="outline-5">
+<h5 id="orgf6e0df7">gf</h5>
+</div>
+<div id="outline-container-orge19aa5a" class="outline-5">
+<h5 id="orge19aa5a">assetfinder</h5>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org90a1684" class="outline-2">
+<h2 id="org90a1684">Wordlists</h2>
+<div class="outline-text-2" id="text-org90a1684">
+</div>
+<div id="outline-container-orgc8fa290" class="outline-3">
+<h3 id="orgc8fa290">General</h3>
+<div class="outline-text-3" id="text-orgc8fa290">
+</div>
+<div id="outline-container-org4c80645" class="outline-4">
+<h4 id="org4c80645">clean<sub>wordlist.sh</sub></h4>
+<div class="outline-text-4" id="text-org4c80645">
+<p>
+Wordlist cleanup, avoid unneccesary requests.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org441b1fe" class="outline-3">
+<h3 id="org441b1fe">Massive wordlist</h3>
+<div class="outline-text-3" id="text-org441b1fe">
+</div>
+<div id="outline-container-org5c32354" class="outline-4">
+<h4 id="org5c32354">api wordlist</h4>
+<div class="outline-text-4" id="text-org5c32354">
+<p>
+wordlist.assetnote.io
+</p>
+</div>
+</div>
+<div id="outline-container-org0c6056e" class="outline-4">
+<h4 id="org0c6056e">all.txt</h4>
+<div class="outline-text-4" id="text-org0c6056e">
+<p>
+Massive list from Jason Haddix
+</p>
+</div>
+</div>
+<div id="outline-container-orgd7566e4" class="outline-4">
+<h4 id="orgd7566e4">commonspeak</h4>
+<div class="outline-text-4" id="text-orgd7566e4">
+<p>
+<a href="https://github.com/assetnote/commonspeak2">https://github.com/assetnote/commonspeak2</a>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgce22ba1" class="outline-3">
+<h3 id="orgce22ba1">Tailored wordlist</h3>
+<div class="outline-text-3" id="text-orgce22ba1">
+<p>
+Talk @tomnomnom on nahamcon
+</p>
+</div>
+<div id="outline-container-org18e5971" class="outline-4">
+<h4 id="org18e5971">cewl</h4>
+<div class="outline-text-4" id="text-org18e5971">
+<p>
+Basic tool for word list generation based on Homepages
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc2dcfaa" class="outline-2">
+<h2 id="orgc2dcfaa">Exploit tooling</h2>
+<div class="outline-text-2" id="text-orgc2dcfaa">
+</div>
+<div id="outline-container-orgac6f4a8" class="outline-3">
+<h3 id="orgac6f4a8">403 Forbidden</h3>
+<div class="outline-text-3" id="text-orgac6f4a8">
+</div>
+<div id="outline-container-org7bd4a18" class="outline-4">
+<h4 id="org7bd4a18">byp4xx.sh</h4>
+</div>
+</div>
+</div>

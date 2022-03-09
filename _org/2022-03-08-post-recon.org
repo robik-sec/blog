@@ -30,4 +30,4 @@ Just the first start has already shown that this is quite fast, but there are mo
 
 ** Gobuster
 
-Alredu oftern used and loved, tody I discoverd that I can also use the same tool for brutefocing dns and vhosts, not only directories.
+Already often used and loved, today I discoverd that I can also use the same tool for brutefocing dns and vhosts, not only directories.

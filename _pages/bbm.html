@@ -18,8 +18,8 @@ Bug Hunters Methodology V4.0
 This is the Basis of this list, everthing else I read/heard somewere else :)
 </p>
 
-<div id="outline-container-orga170e29" class="outline-2">
-<h2 id="orga170e29"><span class="section-number-2">1</span> General</h2>
+<div id="outline-container-orge97e4b9" class="outline-2">
+<h2 id="orge97e4b9"><span class="section-number-2">1</span> General</h2>
 <div class="outline-text-2" id="text-1">
 </div>
 <div id="outline-container-orgf8d2be8" class="outline-3">
@@ -62,37 +62,32 @@ From Bugbounty programms
 <p>
 Only relevant for bigger companies
 </p>
-<ul class="org-ul">
-<li>bgp.he.net
-Homepage for ASN enumeration</li>
-<li>ASNlookaup
-Need to double check if really in scope</li>
-<li>Metabigor
-Need to double check if really in scope</li>
-<li>Amass
-amass intel -asn xxxxx</li>
-</ul>
+<dl class="org-dl">
+<dt>bgp.he.net</dt><dd>Homepage for ASN enumeration</dd>
+<dt>ASNlookaup</dt><dd>Need to double check if really in scope</dd>
+<dt>Metabigor</dt><dd>Need to double check if really in scope</dd>
+<dt>Amass</dt><dd>amass intel -asn xxxxx</dd>
+</dl>
 </div>
 </div>
 <div id="outline-container-orgd3c13ea" class="outline-3">
 <h3 id="orgd3c13ea"><span class="section-number-3">2.4</span> Reverse WHOIS</h3>
 <div class="outline-text-3" id="text-2-4">
-<ul class="org-ul">
-<li>whoxy.com</li>
-<li>DOMLink
-will query whoxy from the cmd line
-recursive tool, will also lookup all the found names</li>
-</ul>
+<dl class="org-dl">
+<dt>whoxy.com</dt><dd></dd>
+
+<dt>DOMLink</dt><dd>will query whoxy from the cmd line
+recursive tool, will also lookup all the found names</dd>
+</dl>
 </div>
 </div>
 <div id="outline-container-orgeee560e" class="outline-3">
 <h3 id="orgeee560e"><span class="section-number-3">2.5</span> Ad/Analytics Releationships</h3>
 <div class="outline-text-3" id="text-2-5">
-<ul class="org-ul">
-<li>builtwith.com
-Basically a technology tracker
-Relationship Profile, will show ad tracking codes</li>
-</ul>
+<dl class="org-dl">
+<dt>builtwith.com</dt><dd>Basically a technology tracker
+Relationship Profile, will show ad tracking codes</dd>
+</dl>
 </div>
 </div>
 
@@ -120,52 +115,41 @@ General tool to get info about URLs, especially location/certificates etc.
 <div id="outline-container-org445b629" class="outline-3">
 <h3 id="org445b629"><span class="section-number-3">3.1</span> Link discovery</h3>
 <div class="outline-text-3" id="text-3-1">
-<ul class="org-ul">
-<li>Spidering via Burp Suit Pro
-Recursion has to be done on you own</li>
-<li>GoSpider
-Need to do recursion externally</li>
-<li>hakrawler
-Recursive is possible</li>
-<li>Subdomainizer
-Parsing mainly JS in order to find subdomains
-also search for Keys</li>
-<li>Subscraper
-Recursive JS scraper</li>
-</ul>
+<dl class="org-dl">
+<dt>Spidering via Burp Suit Pro</dt><dd>Recursion has to be done on you own</dd>
+<dt>GoSpider</dt><dd>Need to do recursion externally</dd>
+<dt>hakrawler</dt><dd>Recursive is possible</dd>
+<dt>Subdomainizer</dt><dd>Parsing mainly JS in order to find subdomains
+also search for Keys</dd>
+<dt>Subscraper</dt><dd>Recursive JS scraper</dd>
+</dl>
 </div>
 </div>
 <div id="outline-container-org75189fd" class="outline-3">
 <h3 id="org75189fd"><span class="section-number-3">3.2</span> Subdomain Scraping</h3>
 <div class="outline-text-3" id="text-3-2">
-<ul class="org-ul">
-<li>Amass
-Most sources, brute forcing options&#x2026;
-Also shows ASN in results -&gt; might be a new ASN to restart on Seed domain discovery</li>
-<li>Subfinder
-Uses other sources, can be used in parallel</li>
-<li>github-subdomains.py
-Will scraping github for subdomains, often not referenced.
-API is rate limited&#x2026; ensure waittimes</li>
-<li>shosubgo
-Parser for Shodan</li>
-<li>Scraping in Cloud ranges
-No tool, but easy to do via
-<a href="https://tls.bufferover.run/">https://tls.bufferover.run/</a></li>
-</ul>
+<dl class="org-dl">
+<dt>Amass</dt><dd>Most sources, brute forcing options&#x2026;
+Also shows ASN in results -&gt; might be a new ASN to restart on Seed domain discovery</dd>
+<dt>Subfinder</dt><dd>Uses other sources, can be used in parallel</dd>
+<dt>github-subdomains.py</dt><dd>Will scraping github for subdomains, often not referenced.
+API is rate limited&#x2026; ensure waittimes</dd>
+<dt>shosubgo</dt><dd>Parser for Shodan</dd>
+<dt>Scraping in Cloud ranges</dt><dd>No tool, but easy to do via
+<a href="https://tls.bufferover.run/">https://tls.bufferover.run/</a></dd>
+</dl>
 </div>
 </div>
 <div id="outline-container-org0b63ea2" class="outline-3">
 <h3 id="org0b63ea2"><span class="section-number-3">3.3</span> Subdomain Bruteforcing</h3>
 <div class="outline-text-3" id="text-3-3">
-<ul class="org-ul">
-<li>Amass
-Uses 8 resolvers per default
-builtin list,</li>
-<li>MassDNS</li>
-<li>shuffleDNS
-Wrapper around MassDNS</li>
-</ul>
+<dl class="org-dl">
+<dt>Amass</dt><dd>Uses 8 resolvers per default
+builtin list,</dd>
+<dt>MassDNS</dt><dd></dd>
+
+<dt>shuffleDNS</dt><dd>Wrapper around MassDNS</dd>
+</dl>
 </div>
 </div>
 <div id="outline-container-org5831126" class="outline-3">
@@ -175,10 +159,9 @@ Wrapper around MassDNS</li>
 Using alternation/mutations on words
 Already part of Amass
 </p>
-<ul class="org-ul">
-<li>altdns
-<a href="https://github.com/infosec-au/altdns">https://github.com/infosec-au/altdns</a></li>
-</ul>
+<dl class="org-dl">
+<dt>altdns</dt><dd><a href="https://github.com/infosec-au/altdns">https://github.com/infosec-au/altdns</a></dd>
+</dl>
 </div>
 </div>
 </div>
@@ -190,67 +173,56 @@ Already part of Amass
 <div id="outline-container-orgf926e0e" class="outline-3">
 <h3 id="orgf926e0e"><span class="section-number-3">4.1</span> Portscanning</h3>
 <div class="outline-text-3" id="text-4-1">
-<ul class="org-ul">
-<li>masscan
-For general scanning, just finding open ports, only uses IPs, no domains
-<a href="https://github.com/robertdavidgraham/masscan">https://github.com/robertdavidgraham/masscan</a></li>
-<li>dnmasscan
-<a href="https://github.com/rastating/dnmasscan">https://github.com/rastating/dnmasscan</a>
-Wrapper to be able to use domains, for masscan</li>
-<li>nmap
-fancy scanning only the open ports to save time</li>
-</ul>
+<dl class="org-dl">
+<dt>masscan</dt><dd>For general scanning, just finding open ports, only uses IPs, no domains
+<a href="https://github.com/robertdavidgraham/masscan">https://github.com/robertdavidgraham/masscan</a></dd>
+<dt>dnmasscan</dt><dd><a href="https://github.com/rastating/dnmasscan">https://github.com/rastating/dnmasscan</a>
+Wrapper to be able to use domains, for masscan</dd>
+<dt>nmap</dt><dd>fancy scanning only the open ports to save time</dd>
+</dl>
 </div>
 </div>
 
 <div id="outline-container-org4857412" class="outline-3">
 <h3 id="org4857412"><span class="section-number-3">4.2</span> Service Scanning</h3>
 <div class="outline-text-3" id="text-4-2">
-<ul class="org-ul">
-<li>brutespray
-<a href="https://github.com/x90skysn3k/brutespray">https://github.com/x90skysn3k/brutespray</a>
-For default credential brute forcing</li>
-</ul>
+<dl class="org-dl">
+<dt>brutespray</dt><dd><a href="https://github.com/x90skysn3k/brutespray">https://github.com/x90skysn3k/brutespray</a>
+For default credential brute forcing</dd>
+</dl>
 </div>
 </div>
 
 <div id="outline-container-orga555861" class="outline-3">
 <h3 id="orga555861"><span class="section-number-3">4.3</span> Github Dorking</h3>
 <div class="outline-text-3" id="text-4-3">
-<ul class="org-ul">
-<li>TODO Listen to "Github and Sensitive data Exposure"</li>
-</ul>
+<dl class="org-dl">
+<dt>TODO Listen to "Github and Sensitive data Exposure"</dt><dd></dd>
+</dl>
 </div>
 </div>
 
 <div id="outline-container-org8ddeee1" class="outline-3">
 <h3 id="org8ddeee1"><span class="section-number-3">4.4</span> Screenshotting</h3>
 <div class="outline-text-3" id="text-4-4">
-<ul class="org-ul">
-<li>httpprobe
-Not really screenshotting, but goot as prefilter, if domain is up</li>
-<li>eyewitness
-<a href="https://github.com/FortyNorthSecurity/EyeWitness">https://github.com/FortyNorthSecurity/EyeWitness</a></li>
-<li>aquatone
-<a href="https://github.com/michenriksen/aquatone">https://github.com/michenriksen/aquatone</a></li>
-<li>httpscreenshot
-<a href="https://github.com/breenmachine/httpscreenshot">https://github.com/breenmachine/httpscreenshot</a></li>
-</ul>
+<dl class="org-dl">
+<dt>httpprobe</dt><dd>Not really screenshotting, but goot as prefilter, if domain is up</dd>
+<dt>eyewitness</dt><dd><a href="https://github.com/FortyNorthSecurity/EyeWitness">https://github.com/FortyNorthSecurity/EyeWitness</a></dd>
+<dt>aquatone</dt><dd><a href="https://github.com/michenriksen/aquatone">https://github.com/michenriksen/aquatone</a></dd>
+<dt>httpscreenshot</dt><dd><a href="https://github.com/breenmachine/httpscreenshot">https://github.com/breenmachine/httpscreenshot</a></dd>
+</dl>
 </div>
 </div>
 
 <div id="outline-container-org86cddfc" class="outline-3">
 <h3 id="org86cddfc"><span class="section-number-3">4.5</span> Subdomain takeover</h3>
 <div class="outline-text-3" id="text-4-5">
-<ul class="org-ul">
-<li>can-i-take-over-xyz
-<a href="https://github.com/EdOverflow/can-i-take-over-xyz">https://github.com/EdOverflow/can-i-take-over-xyz</a></li>
-<li>subover
-<a href="https://github.com/Ice3man543/SubOver">https://github.com/Ice3man543/SubOver</a></li>
-<li>nuclei
-<a href="https://github.com/projectdiscovery/nuclei">https://github.com/projectdiscovery/nuclei</a>
-Bigger Framework, can do a ton of stuff, also includes Subdomain-takeover</li>
-</ul>
+<dl class="org-dl">
+<dt>can-i-take-over-xyz</dt><dd><a href="https://github.com/EdOverflow/can-i-take-over-xyz">https://github.com/EdOverflow/can-i-take-over-xyz</a></dd>
+<dt>subover</dt><dd><a href="https://github.com/Ice3man543/SubOver">https://github.com/Ice3man543/SubOver</a></dd>
+<dt>nuclei</dt><dd><a href="https://github.com/projectdiscovery/nuclei">https://github.com/projectdiscovery/nuclei</a>
+Bigger Framework, can do a ton of stuff, also includes Subdomain-takeover</dd>
+</dl>
 </div>
 </div>
 </div>
@@ -262,13 +234,11 @@ Bigger Framework, can do a ton of stuff, also includes Subdomain-takeover</li>
 <div id="outline-container-org0abdb2e" class="outline-3">
 <h3 id="org0abdb2e"><span class="section-number-3">5.1</span> Extending tools</h3>
 <div class="outline-text-3" id="text-5-1">
-<ul class="org-ul">
-<li>interlace
-<a href="https://github.com/codingo/Interlace">https://github.com/codingo/Interlace</a>
-Thread/proxy different commands</li>
-<li>@tomnomnom
-Various tools, all are amazing, expecially CLI centered</li>
-</ul>
+<dl class="org-dl">
+<dt>interlace</dt><dd><a href="https://github.com/codingo/Interlace">https://github.com/codingo/Interlace</a>
+Thread/proxy different commands</dd>
+<dt>@tomnomnom</dt><dd>Various tools, all are amazing, expecially CLI centered</dd>
+</dl>
 <p>
 -* httpprobe
 -* waybackurls
@@ -284,26 +254,22 @@ Various tools, all are amazing, expecially CLI centered</li>
 <h2 id="org90a1684"><span class="section-number-2">6</span> Wordlists</h2>
 <div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-orge97e4b9" class="outline-3">
-<h3 id="orge97e4b9"><span class="section-number-3">6.1</span> General</h3>
+<div id="outline-container-orgf520bf9" class="outline-3">
+<h3 id="orgf520bf9"><span class="section-number-3">6.1</span> General</h3>
 <div class="outline-text-3" id="text-6-1">
-<ul class="org-ul">
-<li>clean<sub>wordlist.sh</sub>
-Wordlist cleanup, avoid unneccesary requests.</li>
-</ul>
+<dl class="org-dl">
+<dt>clean<sub>wordlist.sh</sub></dt><dd>Wordlist cleanup, avoid unneccesary requests.</dd>
+</dl>
 </div>
 </div>
 <div id="outline-container-org441b1fe" class="outline-3">
 <h3 id="org441b1fe"><span class="section-number-3">6.2</span> Massive wordlist</h3>
 <div class="outline-text-3" id="text-6-2">
-<ul class="org-ul">
-<li>api wordlist
-wordlist.assetnote.io</li>
-<li>all.txt
-Massive list from Jason Haddix</li>
-<li>commonspeak
-<a href="https://github.com/assetnote/commonspeak2">https://github.com/assetnote/commonspeak2</a></li>
-</ul>
+<dl class="org-dl">
+<dt>api wordlist</dt><dd>wordlist.assetnote.io</dd>
+<dt>all.txt</dt><dd>Massive list from Jason Haddix</dd>
+<dt>commonspeak</dt><dd><a href="https://github.com/assetnote/commonspeak2">https://github.com/assetnote/commonspeak2</a></dd>
+</dl>
 </div>
 </div>
 <div id="outline-container-orgce22ba1" class="outline-3">
@@ -312,10 +278,9 @@ Massive list from Jason Haddix</li>
 <p>
 Talk @tomnomnom on nahamcon
 </p>
-<ul class="org-ul">
-<li>cewl
-Basic tool for word list generation based on Homepages</li>
-</ul>
+<dl class="org-dl">
+<dt>cewl</dt><dd>Basic tool for word list generation based on Homepages</dd>
+</dl>
 </div>
 </div>
 </div>
@@ -327,9 +292,9 @@ Basic tool for word list generation based on Homepages</li>
 <div id="outline-container-orgac6f4a8" class="outline-3">
 <h3 id="orgac6f4a8"><span class="section-number-3">7.1</span> 403 Forbidden</h3>
 <div class="outline-text-3" id="text-7-1">
-<ul class="org-ul">
-<li>byp4xx.sh</li>
-</ul>
+<dl class="org-dl">
+<dt>byp4xx.sh</dt><dd></dd>
+</dl>
 </div>
 </div>
 </div>

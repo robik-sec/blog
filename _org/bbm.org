@@ -140,12 +140,13 @@ This is the Basis of this list, everthing else I read/heard somewere else :)
     https://github.com/codingo/Interlace
     Thread/proxy different commands
 - @tomnomnom :: https://github.com/tomnomnom \\
-    Various tools, all are amazing, expecially CLI centered
--* httpprobe
--* waybackurls
--* meg
--* gf
--* assetfinder
+   Various tools, all are amazing, expecially CLI centered
+
+  + httpprobe
+  + waybackurls
+  + meg
+  + gf
+  + assetfinder
 
 * Wordlists
 ** General

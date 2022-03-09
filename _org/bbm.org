@@ -1,6 +1,6 @@
 #+STARTUP: showall indent
 #+STARTUP: hidestars
-#+OPTIONS: num:nil toc:nil
+#+OPTIONS: toc:nil
 #+BEGIN_EXPORT html
 ---
 permalink: /bbm/

@@ -1,0 +1,21 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  CTF evening
+categories:
+  - blog
+tags:
+    - recon
+---
+#+END_EXPORT
+
+So I had a silent hour and decided to play a litte CTF, I already did some recon on this challange, and was already able to get to the machine.
+
+Via an old apache RCE.
+
+Generally everthing would have been quite straight forward. But I have two major takeaways today.
+
+1. Do not give up easily.... most of the time I'm on the right path but doubt myselfe.
+2. Inside a Docker-container, it might be worth to scan the network :)

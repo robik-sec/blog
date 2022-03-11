@@ -7,7 +7,7 @@ title:  CTF evening
 categories:
   - blog
 tags:
-    - recon
+    - CTF
 ---
 #+END_EXPORT
 

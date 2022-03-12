@@ -1,0 +1,24 @@
+
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  A long evening on THM
+categories:
+  - blog
+tags:
+    - CTF
+---
+#+END_EXPORT
+
+Today I finally spend some Money on my carrer as a Pentester. I subscribed on THM. Yes after two month of nearly daly hacking this was time.
+I'm still amazed of the quality of this Page. If I had this 10 years ago, I might never started my actual career as a digital designer.
+Nevertheless, what have I learned today:
+
+Gobuster is able to fuzz extentions, PHP has a syntax highlighting extension, and ffuf is a amazing tool.
+And too much beer doesn't help, when trying CTF challenges.
+
+I'm truly happy to have rediscoverd this nealy forgotten passon of mine.
+I might will never be the amazing "hacker" I would like to be, but nevertheless I'm really having fun.
+Like in the good old days with try2hack.nl, black ICQ and other tools :-)

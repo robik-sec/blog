@@ -26,3 +26,10 @@ So to sum, what was coverd today, mostly to finally remeber the Acronymes.
  - File Inclusion ::
 
 I enjoyed all of them, but I would like to have some more exersises on IDORs
+
+** Quick sidenote:
+
+The main reason why I subscribed was that everthing was painfull slow with the free account, but today I still had the same problem.
+What I figured out is that the open-VPn profile routes only the 10.* ip-addresses via the VPN. But if you import the profile into the
+Network-manager this setting seems to be lost, and it try's to reroute all other accesses as well, therefore everthing was so slow.
+Could have saved some money :)

@@ -1,0 +1,28 @@
+
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  Fundamentals revesited.
+categories:
+  - blog
+tags:
+    - basics
+---
+#+END_EXPORT
+
+As I now subscribed to THM, I can finally finish the basics Rooms. On the one Hand this is the same as I do on INE, but on the otherhand, this is the stuff
+I really need to understand, and to be honest, I learned something new today... so definitly worth to revisit again.
+
+Especially as it is made really fun, the challenges and the Labs, are mostly simple, but they really show the basic principals.
+Sometimes I feel they are too simple, but on the otherhand, there are also a lot of members with no prior knowledge.
+
+So to sum, what was coverd today, mostly to finally remeber the Acronymes.
+
+ - Authentication Bypass ::
+ - IDOR :: Insecure Direct Object Reference
+ - SSRF :: Server-Side Request Forgery
+ - File Inclusion ::
+
+I enjoyed all of them, but I would like to have some more exersises on IDORs

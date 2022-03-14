@@ -1,0 +1,19 @@
+
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  Fundamentals continued
+categories:
+  - blog
+tags:
+    - basics
+---
+#+END_EXPORT
+
+Spending some Time on INE, and THM, getting the basics covered, not really mindblowing but defenitly good to strengthen my foundation.
+Today checkedout:
+ - Directory Bruteforcing :: With ~Go/Dirbuster~ as well as ~dirb~
+ - XXS :: Cros-Site Scripting... capturing my first cookies :)
+ - RCE :: Some basic Remote Code Execution samples

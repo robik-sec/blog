@@ -1,0 +1,24 @@
+
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  Fundamentals continued
+categories:
+  - blog
+tags:
+    - basics
+    - CVE
+---
+#+END_EXPORT
+
+Again repeating the same topics from other sources, I dug through the XSS sources on INE.
+Honestly doing this basics in two different sources, with a short time delay really strenghes the basics...
+at least thats what I'm thinking.
+
+After that I spend some Time reading, and trying the dirtypipe exploit.
+THM has a special room for that, and honestly its quite impressive how these eploits work... and Yes do not forget to patch your kernels :)
+
+Dirty Pipe: CVE-2022-0847
+https://dirtypipe.cm4all.com/

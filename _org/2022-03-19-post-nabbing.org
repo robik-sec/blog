@@ -1,0 +1,23 @@
+
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  Tab nabbing
+categories:
+  - blog
+tags:
+    - Phishing
+---
+#+END_EXPORT
+
+
+Hi, today I learned about Nabbing,
+
+although I had quite a hard time to get it going (Firefox prevents it per default) Something I didn't know yet.
+
+There are numerous references, but this one is quite nice:
+https://santexgroup.com/blog/what-is-reverse-tabnabbing-and-why-is-it-important-to-be-aware-of/
+
+No Idea, why I still cannot find a solution, for the CTF, but appatently I need to try harder.

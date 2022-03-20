@@ -1,0 +1,17 @@
+
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  Slacking off
+categories:
+  - blog
+tags:
+    - fundamentals
+---
+#+END_EXPORT
+
+
+Spent some Time on INE, repeating the basics on Backdoor's, nothing special, but after a long day, sometimes just relaxing and watching some videos is the best you can do.
+Especially, after such a beautiful day in the great outdoors, and with my familiy.

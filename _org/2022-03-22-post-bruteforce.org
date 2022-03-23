@@ -4,16 +4,15 @@
 #+OPTIONS: num:nil toc:nil
 #+BEGIN_EXPORT html
 ---
-title:  Bruteforcing with all the tools
+title:  Content Security Policity
 categories:
   - blog
 tags:
-    - tools
+    - JS
+    - CSP
 ---
 #+END_EXPORT
 
 
-INE now has shown me that also the "default" tools like Nmap and metasploit support bruteforcing, so it's not only hyrda which does the job...
-although this is still the fastest and universal solution for bruteforcing.
-
-Also did a burp room, in order to understand the tool a little better, but still not that happy with the GUI. Although makros etc. help to automate a lot.
+The Intigriti Newsletter showed me a new challange.... and with this I again found a black spot in my knowledge. CSP.
+Lukily there is a THM room to understand the basics, but honestly it makes it quite hard... or at least I need to dig a lot deeper.

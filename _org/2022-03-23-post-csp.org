@@ -1,0 +1,18 @@
+
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  Content Security Policity
+categories:
+  - blog
+tags:
+    - JS
+    - CSP
+---
+#+END_EXPORT
+
+
+The Intigriti Newsletter showed me a new challange.... and with this I again found a black spot in my knowledge. CSP.
+Lukily there is a THM room to understand the basics, but honestly it makes it quite hard... or at least I need to dig a lot deeper.

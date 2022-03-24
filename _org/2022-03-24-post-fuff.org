@@ -1,0 +1,21 @@
+
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  Fuzz Faster U Fool
+categories:
+  - blog
+tags:
+    - tools
+    - CSP
+---
+#+END_EXPORT
+
+
+What a name for a tool, but it is definity worth to look at. Its quite fast, an specially for parameter discovery this is really nice.
+https://github.com/ffuf/ffuf
+
+Nevertheless, the Intigrity challange shows me that I really have a hard time to bypass the CSP, and understand all the dependencies within the web elements. what is allowed and what not.
+especially how to bypass a noice csp?.

@@ -1,0 +1,20 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  Back to gaming
+categories:
+  - blog
+tags:
+    - CTF
+---
+#+END_EXPORT
+
+So instead of focusing on CSP where I really got stuck, and a little annoyed, I played some games again on THM... its qute funne how you discover your weaknesses on such games.
+I have now idea how to properly enumerate samba, and to connect into a ftp like functions... I really need to check this.
+
+Stuch with john the ripper, if you do not use ~-w=wordlist~ it tries to crack the wordlist... qute some time lost for this supit mistake.
+But I've seen on the Pentest crash-course most of the basics sit quite well.
+
+But I've also seen that on my DNS basics I still have some blind spots, especially zone-transfers and how to use them

@@ -1,0 +1,38 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  Back to gaming
+categories:
+  - blog
+tags:
+    - CTF
+    - XSS
+    - Linux
+---
+#+END_EXPORT
+
+Yes, what have I learned today :) Finally the CSP solution for the intigriti challange was published, and yes what should I say.
+It definitly makes sense to check their twitter :) The Hints might be useful, not sure if I would have figured something out,
+but at least this would have been a chance. Bypassing the CSP when the site gives an Error is at least something I will remeber.
+Aswell as the javascript witout braces:
+
+#+begin_src html :results output
+<img src=a onerror="window.onerror=alert;throw document.domain">
+#+end_src
+
+Furthermore I spend again some Time on INE and THM, but the CTF has tought me some valuable lessons.
+First of all how tu use tcpdump.... necer seen that one before.
+
+#+begin_src shell :results output
+tcpdump -i lo -A port not 22
+#+end_src
+
+And another lesson about Linux file permissions... (There I really thought I have seen all, but apparently using Linux for 15 years is still not enough)
+
+ - + :: suffix indicates an access control list that can control additional permissions.
+ - . :: suffix indicates an SELinux context is present. Details may be listed with the command ls -Z.
+ - @ :: suffix indicates extended file attributes are present.
+
+And the tool ~getfacl~ to decode all this in detail.

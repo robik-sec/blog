@@ -1,0 +1,45 @@
+---
+title:  Back to gaming
+categories:
+  - blog
+tags:
+    - CTF
+    - XSS
+    - Linux
+---
+
+<p>
+Yes, what have I learned today :) Finally the CSP solution for the intigriti challange was published, and yes what should I say.
+It definitly makes sense to check their twitter :) The Hints might be useful, not sure if I would have figured something out,
+but at least this would have been a chance. Bypassing the CSP when the site gives an Error is at least something I will remeber.
+Aswell as the javascript witout braces:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-html">&lt;<span style="font-weight: bold;">img</span> src=a <span style="font-weight: bold; font-style: italic;">onerror</span>=<span style="font-style: italic;">"window.onerror=alert;throw document.domain"</span>&gt;
+</pre>
+</div>
+
+<p>
+Furthermore I spend again some Time on INE and THM, but the CTF has tought me some valuable lessons.
+First of all how tu use tcpdump&#x2026;. necer seen that one before.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">tcpdump -i lo -A port not 22
+</pre>
+</div>
+
+<p>
+And another lesson about Linux file permissions&#x2026; (There I really thought I have seen all, but apparently using Linux for 15 years is still not enough)
+</p>
+
+<dl class="org-dl">
+<dt>+</dt><dd>suffix indicates an access control list that can control additional permissions.</dd>
+<dt>.</dt><dd>suffix indicates an SELinux context is present. Details may be listed with the command ls -Z.</dd>
+<dt>@</dt><dd>suffix indicates extended file attributes are present.</dd>
+</dl>
+
+<p>
+And the tool <code>getfacl</code> to decode all this in detail.
+</p>

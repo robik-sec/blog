@@ -12,7 +12,7 @@ tags:
 ---
 #+END_EXPORT
 
-Honestly, I really enjoy the reverse-enginieering topics. Maybe because this taps into my knowlege from years ago.
+Honestly, I really enjoy the reverse-engineering topics. Maybe because this taps into my knowlege from years ago.
 
 But blocking reverse attempts be just a slight modification of the ELF Header, is honestly amazing.
 https://pentester.blog/?p=247

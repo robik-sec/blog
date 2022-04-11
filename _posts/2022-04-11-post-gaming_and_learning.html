@@ -1,0 +1,25 @@
+---
+title:  Gaming and learning...
+categories:
+  - blog
+tags:
+    - CTF
+---
+
+<p>
+Yes, gameification works, at least for me. What have I learned today&#x2026;. there are timers on linux, not only cron jobs.
+System timers can start services like cron jobs&#x2026; but they are much harder to find. but again <code>pspy</code> finds all the
+thing running on the host&#x2026;
+</p>
+
+<p>
+How to get info about system-timers
+</p>
+
+<p>
+<code>systemctl list-timers -all</code>
+</p>
+
+<p>
+After that you can find the jobs in <code>/etc/systemd/system</code> if the services are readable, you at least see who starts them, and what is executed.
+</p>

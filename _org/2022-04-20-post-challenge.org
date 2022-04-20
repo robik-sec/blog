@@ -1,0 +1,16 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  XSS Challenge time... next day
+categories:
+  - blog
+tags:
+    - XSS
+---
+#+END_EXPORT
+
+Third day hitting my head against a wall.... No Idea how to modify the location.host parameter...
+Also nothing valueable found in the interwebs so far...
+Maybe the next hint helps.

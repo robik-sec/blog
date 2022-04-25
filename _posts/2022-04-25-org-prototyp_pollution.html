@@ -1,0 +1,47 @@
+---
+title:  Let's polute some Prototypes
+categories:
+  - blog
+tags:
+    - XSS
+    - JS
+---
+
+<p>
+So I spent some hours on the Intigrity challange, and while I was able to bypass the sanatization, and learnd quite some tricks, I was miles away from solving it.
+And honestly reading the writups, I did not even know this is possible. Ao I still have quite a lot to learn on the JS side.
+</p>
+
+<p>
+Following this write-up and the video, I'm finally able to understand what should be done.
+<a href="https://github.com/goku-KaioKen/intigriti/blob/main/challenge-writeups/Challenge-0422.pdf">https://github.com/goku-KaioKen/intigriti/blob/main/challenge-writeups/Challenge-0422.pdf</a>
+</p>
+
+<p>
+I think the most valueable lession is that I know now that prototype Polution exists :).
+<a href="https://portswigger.net/daily-swig/prototype-pollution-the-dangerous-and-underrated-vulnerability-impacting-javascript-applications">https://portswigger.net/daily-swig/prototype-pollution-the-dangerous-and-underrated-vulnerability-impacting-javascript-applications</a>
+</p>
+
+<p>
+This description gives some more insight on this.
+but basically this small example shows everthing we need to know.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js">let customer = {name: "person", address: "here"}
+console.log(customer.toString())
+//output: "[object Object]"
+
+customer.__proto__.toString = ()=&gt;{alert("polluted")}
+console.log(customer.toString())
+// alert box pops up: "polluted"
+</pre>
+</div>
+
+<p>
+Besides this I did my first KOTH on THM, which was quite fun, but I was destroid by a kid halv my age :) Yes this shows me again how much I still need to learn.
+</p>
+
+<p>
+But as THM not even shows an prototype pollution rooms, I understand that this integrity challanges are defenitly out of my league, but maybe thats the thin I need?
+</p>

@@ -22,6 +22,7 @@ Robiks
 *918 points*
 
 Solves
+|-------------------+----------+-------+-------------------------|
 | Challenge         | Category | Value | Time                    |
 |-------------------+----------+-------+-------------------------|
 | Flagcat           | Warmups  |    50 | April 29th, 9:04:35 AM  |
@@ -37,6 +38,7 @@ Solves
 | Keeber 1          | OSINT    |    50 | April 29th, 5:13:12 PM  |
 | Keeber 4          | OSINT    |   318 | April 30th, 10:23:42 AM |
 | Keeber 5          | OSINT    |    50 | April 30th, 12:31:46 PM |
+|-------------------+----------+-------+-------------------------|
 
 I still have to process the huge amounts of mistakes I made, and issues I had. Mostly with not really trusting my selve.
 E.g. in the Gossip challange where I messed up the ssh key, and instead of focusing on that I tried everthing else. Which was obviously false.

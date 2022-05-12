@@ -11,17 +11,20 @@ tags:
 ---
 #+END_EXPORT
 
-So what a weekend, Tears sweat and a lot of Brainpower... the few houres I had to spend where amazing. Really Fun, asn definitly a challange, or some.
+So what a weekend, tears, sweat and a lot of Brainpower... the few houres I had to spend where amazing. Really fun, and definitly a challange, or some.
 
-I learnt a ton of new stuff, and especially all the CFT related, things which where new to me.... I expected a lot more of Web hacking, and a little less of all the other stuff.
+I learnt a ton of new stuff, and especially all the CTF related  things which where new to me....
+Expected a lot more of Web hacking, and a little less of all the other stuff.
 
 Generally this are my results:
 
 Robiks
-*709th place* (Not that bad for a One-Man show and ~3200 Teams
+*709th place*
 *918 points*
 
-Solves
+(Not that bad for a One-Man show and ~3200 Teams)
+
+Solves:
 |-------------------+----------+-------+-------------------------|
 | Challenge         | Category | Value | Time                    |
 |-------------------+----------+-------+-------------------------|

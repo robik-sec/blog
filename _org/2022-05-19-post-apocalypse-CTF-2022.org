@@ -14,7 +14,7 @@ tags:
 Yes today I'm proud, so I can show my results.
 
 #+CAPTION: My certificate
-[[./imgages/CTF-Cyber-Apocalypse-2022-robiks.png]]
+[[../../images/CTF-Cyber-Apocalypse-2022-robiks.png]]
 
 Place 574 from 3697, is definitly not that bad, especially for a one-man-show. It at least in the top 20%, which is already amazing for me, keeping in mind that I'm not learning since 3 Month.
 But what I find the funniest, I reaally was quite good in reversing, and had no real chance on the web category. Although, I'm again my biggest enemy.

@@ -1,0 +1,23 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: num:nil toc:nil
+#+BEGIN_EXPORT html
+---
+title:  Apocalypse CTF from HTB 2022.
+categories:
+  - blog
+tags:
+    - CTF
+---
+#+END_EXPORT
+
+Yes today I'm proud, so I can show my results.
+
+#+CAPTION: My certificate
+[[./imgages/CTF-Cyber-Apocalypse-2022-robiks.png]]
+
+Place 574 from 3697, is definitly not that bad, especially for a one-man-show. It at least in the top 20%, which is already amazing for me, keeping in mind that I'm not learning since 3 Month.
+But what I find the funniest, I reaally was quite good in reversing, and had no real chance on the web category. Although, I'm again my biggest enemy.
+I spend to much time about saying that this won't be the right way, instead of trying. And honestly I expected the beginner challanges to be much easier. So I thought I'm thinking too complex.
+And on the otherhand, I've seen that my ideas where often correct, but I did not execute them correctly. So keep in mind, most of the time my ideas are correct, so keep trying, and do not give up that
+easy.
